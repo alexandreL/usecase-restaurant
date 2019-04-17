@@ -1,0 +1,6 @@
+{
+  "type": "postgres",
+  "database": "restorantx",
+  "username": "utilisateur",
+  "password": "unMotDePasseComplex"
+}

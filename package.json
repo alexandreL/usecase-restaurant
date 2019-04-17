@@ -1,0 +1,27 @@
+{
+  "name": "usecase-restaurant",
+  "version": "1.0.0",
+  "description": "usecase of an api for a restorant",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexandreLoub/usecase-restaurant.git"
+  },
+  "author": "Alexandre Loubeyres",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlexandreLoub/usecase-restaurant/issues"
+  },
+  "homepage": "https://github.com/AlexandreLoub/usecase-restaurant#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "esm": "^3.2.22",
+    "express": "^4.16.4",
+    "pg": "^7.10.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^5.6.0"
+  }
+}

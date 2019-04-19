@@ -35,7 +35,7 @@ new Vue({
     newProduct: function (el) {
       axios.patch('/api/product', {'id': this.idProduct,'actif': this.actif,'languages': this.data})
         .then(function (response) {
-          //window.location.href = '/index.html'
+          window.location.href = '/index.html'
           console.log(response)
         })
         .catch(function (error) {

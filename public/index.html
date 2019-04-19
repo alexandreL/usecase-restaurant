@@ -24,6 +24,9 @@
   <div class="container">
     <div class="row">
       <input type="text" name="name" v-model="name" @keyup.enter="search"/>
+      <form @submit="newProduct">
+        <input type="submit" value="Creer un nouveau Produit" class="btn btn-primary"/>
+      </form>
     </div>
     <div class="">
       <div class="row">

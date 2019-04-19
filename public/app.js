@@ -38,9 +38,12 @@ new Vue({
     }
   },
   created: function () {
+    this.search()
   },
   methods: {
     newProduct: function (el) {
+      window.location.href = '/new.html'
+      el.preventDefault()
     },
     search: function (el) {
       this.plats.splice(0, this.plats.length)

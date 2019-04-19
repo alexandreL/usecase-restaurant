@@ -22,19 +22,37 @@
 
 <div id="store">
   <div class="container">
-    <div class="row">
-      <input type="text" name="name" v-model="name" @keyup.enter="search"/>
-    </div>
+
     <div class="">
       <div class="row">
-        <plat :actif="elem.actif" :language="elem.language" :idproduct="elem._id" :key="elem._id"
-              v-for="elem in plats"/>
+        <form @submit="newProduct" >
+          <table class="table">
+            <thead>
+            <tr>
+              <th scope="col">Language</th>
+              <th scope="col">Nom</th>
+              <th scope="col">Description</th>
+            </tr>
+            </thead>
+            <tbody v-for="(info, value) in data">
+            <tr>
+              <th scope="row">{{value}}</th>
+              <td><input type="text" name="name" v-model="info.name"></td>
+              <td><input type="text" name="desc" v-model="info.desc"></td>
+            </tr>
+            </tbody>
+          </table>
+          <input type="checkbox" name="actif" value="actif" v-model="actif" >actif<br>
+          <input id="prodId" name="prodId" type="hidden" v-bind:value="idProduct">
+
+          <input type="submit" value="Update" class="btn btn-primary"/>
+        </form>
       </div>
     </div>
   </div>
 </div>
 
 
-<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="edit.js"></script>
 </body>
 </html>

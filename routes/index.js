@@ -3,6 +3,7 @@ import bodyParser from 'body-parser'
 
 // routes
 import product from './product'
+import restorant from './restorant'
 
 const app = express()
 
@@ -15,6 +16,6 @@ app.use((req, res, next) => {
   next()
 })
 
-app.use('/api', product)
+app.use('/api', product, restorant)
 
 export default app

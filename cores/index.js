@@ -1,6 +1,6 @@
-import Product from './product'
-import {db} from '../db'
+import ProductControler from './ProductControler'
+import {productModel} from '../db'
 
-const product = new Product(db)
+const productControler = new ProductControler(productModel)
 
-export {product}
+export {productControler}
